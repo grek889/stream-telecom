@@ -7,7 +7,7 @@ import { View, users } from '@/shared/constants';
 export const App = () => {
   const [value, setValue] = React.useState<View>(View.List);
 
-  const handleChange = (event: React.SyntheticEvent, newValue: View) => {
+  const handleChange = (_event: React.SyntheticEvent, newValue: View) => {
     setValue(newValue);
   };
 
