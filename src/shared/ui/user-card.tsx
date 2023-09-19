@@ -3,10 +3,12 @@ import React from 'react';
 import { User } from '../constants';
 
 interface UserCardProps {
-  user: User;
+  name: string;
+  email: string;
+  phone: string;
 }
 
-export const UserCard: React.FC<UserCardProps> = ({ user }) => {
+export const UserCard: React.FC<UserCardProps> = ({ name, email, phone }) => {
   return (
     <Card className="w-full">
       <CardContent>
@@ -14,10 +16,10 @@ export const UserCard: React.FC<UserCardProps> = ({ user }) => {
           Пользователь
         </Typography>
         <Typography variant="h6" component="div">
-          {user.name}
+          {name}
         </Typography>
-        <Typography color="text.secondary">{user.email}</Typography>
-        <Typography color="text.secondary">{user.phone}</Typography>
+        <Typography color="text.secondary">{email}</Typography>
+        <Typography color="text.secondary">{phone}</Typography>
       </CardContent>
     </Card>
   );
