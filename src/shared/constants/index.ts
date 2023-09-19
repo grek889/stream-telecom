@@ -1,1 +1,3 @@
-export { users, type User } from './users';
+export { users } from './users';
+
+export { type User, type TapPanelProps, View } from './types';
