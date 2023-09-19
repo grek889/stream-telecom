@@ -1,4 +1,4 @@
-import { TapPanelProps } from '@/shared/constants';
+import { TabPanelProps } from '@/shared/constants';
 import { TabPanel } from '@mui/lab';
 import {
   Table,
@@ -9,7 +9,7 @@ import {
 } from '@mui/material';
 import React from 'react';
 
-export const TabPanelList: React.FC<TapPanelProps> = ({ value, users }) => {
+export const TabPanelList: React.FC<TabPanelProps> = ({ value, users }) => {
   return (
     <TabPanel value={value}>
       <Table sx={{ minWidth: 650 }}>

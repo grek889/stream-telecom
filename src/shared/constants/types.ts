@@ -10,7 +10,7 @@ export enum View {
   Tiles = 'tiles'
 }
 
-export interface TapPanelProps {
+export interface TabPanelProps {
   users: User[];
   value: string;
 }
